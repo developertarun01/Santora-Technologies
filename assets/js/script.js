@@ -54,12 +54,15 @@ hambergerClose.addEventListener('click', () => {
 })
 
 // Navbar 
+const currentPage = window.location.pathname.split('/').pop() || "index.html";
 const navLink = document.querySelectorAll('.nav-link');
 navLink.forEach(link => {
-    link.addEventListener('click', (e) => {
-        navLink.forEach(link => link.classList.remove('active'));
+    const linkPage = link.getAttribute('href');
+
+    if (linkPage === currentPage) {
+        navLink.forEach(l => l.classList.remove('active'));
         link.classList.add('active');
-    })
+    }
 })
 
 // Blog Part 
