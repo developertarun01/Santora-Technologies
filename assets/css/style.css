@@ -1,6 +1,6 @@
 :root {
   --primary: #2c7b5b;
-  --background: #f6f6f6;
+  --background: #f1f1f1;
   --button-light: #8cc63e;
   --button: #589f43;
   --button-dark: #2c7b5b;
@@ -265,7 +265,7 @@ hr {
 }
 
 .mt-50 {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .mr-10 {
@@ -489,7 +489,7 @@ details ul li {
 }
 
 .sec9-card-bottom {
-  padding: 20px;
+  padding: 25px;
   background: var(--background);
 }
 
@@ -497,8 +497,12 @@ details ul li {
   color: white;
 }
 
-.sec9-card-top img {
+.sec9-card-top {
   height: 300px;
+}
+
+.sec9-card-top img{
+  height: 100%;
 }
 
 .sec9 button i {
@@ -683,7 +687,7 @@ details ul li {
     flex-direction: row;
   }
 
-  .sec9-card-top img{
+  .sec9-card-top{
     height: 200px;
   }
 

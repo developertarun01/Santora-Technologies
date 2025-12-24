@@ -88,7 +88,7 @@ function displayBlogs() {
                     </div>
                     <div class="sec9-card-bottom">
                     
-                    <h2 class="mt-20">${blog.title}</h2>
+                    <h2>${blog.title}</h2>
                     <p class="mt-20">${blog.summary}</p>
                     <div class="flex-center sec9-card-read mt-20">
                         <div class="flex">
