@@ -12,3 +12,12 @@ hambergerClose.addEventListener('click', () => {
     hambergerClose.style.display = "none";
     hambergerOpen.style.display = "block";
 })
+
+// Navbar 
+const navLink = document.querySelectorAll('.nav-link');
+navLink.forEach(link => {
+    link.addEventListener('click', (e) => {
+        navLink.forEach(link => link.classList.remove('active'));
+        link.classList.add('active');
+    })
+})

@@ -13,6 +13,14 @@
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 55px;
+}
+
 .center {
   text-align: center;
 }
@@ -304,6 +312,13 @@ hr {
   margin-right: 15px;
 }
 
+.nav-center ul li a.active {
+  color: var(--button-dark);
+  background-color: var(--background);
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+
 /* Section 1  */
 .sec1 {
   background: linear-gradient(
@@ -536,7 +551,8 @@ details ul li {
     flex-direction: column;
   }
 
-  .btn, .btn-hollow {
+  .btn,
+  .btn-hollow {
     width: 100%;
   }
 
@@ -644,7 +660,8 @@ details ul li {
     width: 110px;
   }
 
-  .footer2-card ul, .footer2-card-3 {
+  .footer2-card ul,
+  .footer2-card-3 {
     text-align: center;
   }
 }
