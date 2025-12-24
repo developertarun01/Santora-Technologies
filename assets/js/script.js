@@ -92,8 +92,8 @@ function displayBlogs() {
                     <p class="mt-20">${blog.summary}</p>
                     <div class="flex-center sec9-card-read mt-20">
                         <div class="flex">
-                            <p><i class="fas fa-user"></i> ${blog.writer}</p>
-                            <p><i class="fas fa-calendar"></i> ${blog.date}</p>
+                            <p><i class="fas fa-user"></i> <b>${blog.writer}</b></p>
+                            <p><i class="fas fa-calendar"></i> <b>${blog.date}</b></p>
                         </div>
                         <button onclick=displayOneBlogs(${blog.id}) class="btn">Read More <i
                                     class="fa-solid fa-arrow-right fa-beat ml-10"></i></button>
@@ -131,8 +131,8 @@ function displayOneBlogs(id) {
             <div>
             <h2>${blog.title}</h2>
             <div class="flex mt-20">
-                <p><i class="fas fa-user"></i> ${blog.writer}</p>
-                <p><i class="fas fa-calendar"></i> ${blog.date}</p>
+                <p><i class="fas fa-user"></i> <b>${blog.writer}</b></p>
+                <p><i class="fas fa-calendar"></i> <b>${blog.date}</b></p>
             </div>
             <div class="mt-20 flex-col">${blog.desc}</div>
             </div>

@@ -674,6 +674,10 @@ details ul li {
     flex-direction: row;
   }
 
+  .sec5-card-right {
+    width: 200px;
+  }
+
   .sec5-center {
     padding: 20px;
   }
