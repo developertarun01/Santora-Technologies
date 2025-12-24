@@ -119,7 +119,7 @@ function displayOneBlogs(id) {
     sec9Container.innerHTML = `
         <a href="blog.html">
           <button class="btn mt-50">
-            <i class="fa-solid fa-arrow-left mr-10"></i>
+            <i class="fa-solid fa-arrow-left fa-beat mr-10"></i>
             See All Blogs
           </button>
         </a>

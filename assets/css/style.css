@@ -501,6 +501,10 @@ details ul li {
   height: 300px;
 }
 
+.sec9 button i {
+  color: white;
+}
+
 /* Section 10  */
 .sec10-inner {
   justify-content: space-between;
