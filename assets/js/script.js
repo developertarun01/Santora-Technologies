@@ -92,7 +92,7 @@ function displayBlogs() {
                             <p><i class="fas fa-user"></i> ${blog.writer}</p>
                             <p><i class="fas fa-calendar"></i> ${blog.date}</p>
                         </div>
-                        <button onclick=displayOneBlogs() class="btn">Read More <i
+                        <button onclick=displayOneBlogs(${blog.id}) class="btn">Read More <i
                                     class="fa-solid fa-arrow-right fa-beat ml-10"></i></button>
                     </div>
                     </div>
@@ -107,16 +107,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const sec9Container = document.getElementById('sec9-container');
 
-function displayOneBlogs() {
+function displayOneBlogs(id) {
+    const blog = blogData.find(item => item.id === id);
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    if (!blog) return;
     sec9Container.innerHTML = `
-    <a href="blog.html"><button class="btn mt-50"><i class="fa-solid fa-beat fa-arrow-left mr-10"></i>See All
-                    Blogs</button></a>
-            <div class="one-blog-container mt-20">
-                <h2>Tarun</h2>
-                <div class="flex mt-20">
-                    <p><i class="fas fa-user"></i> ${blog.writer}</p>
-                    <p><i class="fas fa-calendar"></i> ${blog.date}</p>
-                </div>
-                <p class="mt-20">${blog.desc}</p>
-            </div>`
+        <a href="blog.html">
+          <button class="btn mt-50">
+            <i class="fa-solid fa-arrow-left mr-10"></i>
+            See All Blogs
+          </button>
+        </a>
+
+        <div class="one-blog-container grid-2 mt-20">
+        <div>
+                        <img src="${blog.image}" alt="Blog Image">
+                    </div>
+            <div>
+            <h2>${blog.title}</h2>
+            <div class="flex mt-20">
+                <p><i class="fas fa-user"></i> ${blog.writer}</p>
+                <p><i class="fas fa-calendar"></i> ${blog.date}</p>
+            </div>
+            <div class="mt-20 flex-col">${blog.desc}</div>
+            </div>
+        </div>
+    `;
 }

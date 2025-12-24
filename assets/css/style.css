@@ -471,9 +471,17 @@ details ul li {
 }
 
 .one-blog-container {
-  background-color: white;
+  background-color: var(--background);
   padding: 20px;
   border-radius: 20px;
+}
+
+.one-blog-container img {
+  border-radius: 20px;
+}
+
+.one-blog-container li {
+  list-style: disc;
 }
 
 .sec9-card-read {
@@ -558,6 +566,7 @@ details ul li {
   .grid-3,
   .grid-4 {
     grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
 
   .flex,
@@ -667,6 +676,14 @@ details ul li {
   }
 
   .sec9-card-read .flex{
+    flex-direction: row;
+  }
+
+  .sec9-card-top img{
+    height: 200px;
+  }
+
+  .one-blog-container .flex {
     flex-direction: row;
   }
 
