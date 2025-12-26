@@ -48,9 +48,70 @@
         </div>
     </nav>
 
-    <section class="sec9">
-        <div class="sec9-inner container" id="sec9-container">
-            <h1 class="center mt-50">Contact Us</h1>
+    <section class="sec1 contact-sec1">
+        <div class="sec1-inner container flex-center">
+            <div class="sec1-left">
+                <h1 class="mt-40">Ready to Unlock Growth Opportunities?</h1>
+                <h4 class=" mt-20">Book a free consultation with us, and we will audit your account and provide
+                    strategic recommendations to scale your brand.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-sec2">
+        <div class="contact-sec2-inner container grid-2">
+            <div class="contact-sec2-left">
+                <form action="process-form.php" method="post">
+                    <div class="mt-20">
+                        <label for="name">Full Name <span>*</span></label>
+                        <input id="name" type="text" placeholder="Enter Full Name" name="name" required
+                            autocomplete="name">
+                    </div>
+                    <div class="mt-20">
+                        <label for="phone">Mobile Number <span>*</span></label>
+                        <input id="phone" type="tel" placeholder="Enter Mobile Number" name="phone" required
+                            autocomplete="tel">
+                    </div>
+                    <div class="mt-20">
+                        <label for="email">Email Id <span>*</span></label>
+                        <input id="email" type="email" placeholder="Enter Email Id" name="email" required
+                            autocomplete="email">
+                    </div>
+                    <div class="mt-20">
+                        <label for="subject">Subject <span>*</span></label>
+                        <input id="subject" type="text" placeholder="Enter your Query" name="subject" required>
+                    </div>
+                    <div class="mt-20">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Can you Explain"></textarea>
+                    </div>
+                    <div class="mt-20">
+                        <button type="submit" class="btn" name="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-sec2-right flex-center">
+                <div class="footer1-card-3">
+                    <h1>We are here to help!</h1>
+                    <p class="mt-20">Tel: <a href="tel:+916395338983">+91 63953 38983</a></p>
+                    <p>Email: <a href="mailto:contact@santoratechnologies.com">contact@ santoratechnologies.com</a>
+                    </p>
+                    <div class="mt-30">
+                        <a href="https://www.facebook.com/SantoraTechnologies/"><i
+                                class="fa-brands fa-facebook fa-2xl"></i></a>
+                        <a
+                            href="https://www.linkedin.com/company/santora-technologies-private-limited/posts/?feedView=all"><i
+                                class="fa-brands fa-linkedin fa-2xl"></i></a>
+                        <a href="https://www.instagram.com/SantoraTechnologies/"><i
+                                class="fa-brands fa-instagram fa-2xl"></i></a>
+                    </div>
+
+                    <a href="tel:+916395338983"><button class="btn mt-30">
+                            <h3>TALK TO US</h3>
+                        </button></a>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -63,8 +124,8 @@
 
     <footer class="footer1">
         <div class="footer1-inner container">
-            <div class="grid-2">
-                <div class="footer1-card-1">
+            <div class="flex">
+                <div class="footer1-card-1 flex-1">
 
                     <h3 class="">Recent Posts</h3>
                     <li class="mt-20  small"><a href="blog.html">Top B2B Approaches for a Successful Manufacturing
@@ -87,7 +148,7 @@
                             Traditional
                             SEO?</a></li>
                 </div>
-                <div class="flex footer1-card-right">
+                <div class="grid-2 footer1-card-right flex-2">
                     <div class="footer1-card flex-col">
                         <h3>Partners</h3>
                         <img src="./assets/images/hubspot.png" alt="HubSpot Partner Logo">

@@ -57,6 +57,22 @@ h6 {
   line-height: 1.6;
 }
 
+form {
+  padding: 20px;
+  background-color: var(--background);
+  border-radius: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form button {
+  width: 100%;
+}
+
 i,
 p,
 li,
@@ -85,13 +101,17 @@ p {
 
 span {
   color: var(--primary);
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(255, 206, 114);
+  text-underline-offset: 3px; /* optional, nicer spacing */
 }
 
 input,
 textarea {
-  padding: 10px;
-  border-radius: 15px;
-  border: 1px solid var(--dark);
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 input:focus,
@@ -111,6 +131,10 @@ a {
   font-weight: 600;
 }
 
+a:hover {
+  color: var(--button-dark);
+}
+
 li a:hover {
   color: var(--button-dark);
   background-color: var(--background);
@@ -127,7 +151,7 @@ hr {
 }
 
 .small {
-  font-size: 12px;
+  font-size: 11.5px;
   /* line-height: 2.5; */
 }
 
@@ -172,6 +196,10 @@ hr {
 
 .flex-1 {
   flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
 }
 
 .grid-2 {
@@ -335,6 +363,28 @@ hr {
     url(../images/office2.jpg) center/cover no-repeat;
 }
 
+.about-sec1 {
+  background: linear-gradient(
+      to right,
+      rgb(255, 255, 255) 0%,
+      rgba(255, 255, 255, 0.9) 45%,
+      rgba(255, 255, 255, 0.5) 65%,
+      rgba(255, 255, 255, 0) 75%
+    ),
+    url(../images/office3.jpg) center/cover no-repeat;
+}
+
+.contact-sec1 {
+  background: linear-gradient(
+      to right,
+      rgb(255, 255, 255) 0%,
+      rgba(255, 255, 255, 0.9) 45%,
+      rgba(255, 255, 255, 0.5) 65%,
+      rgba(255, 255, 255, 0) 75%
+    ),
+    url(../images/contact.jpg) center/cover no-repeat;
+}
+
 .sec1-inner {
   height: 100vh;
 }
@@ -357,6 +407,18 @@ hr {
 
 /* Section 2 */
 
+.contact-sec2 {
+  background: white;
+}
+
+.contact-sec2-right {
+  justify-content: end;
+}
+
+.contact-sec2-right .fa-brands {
+  color: var(--button-light);
+}
+
 .sec2-card {
   background-color: var(--primary);
   border-radius: 20px;
@@ -378,9 +440,14 @@ hr {
 }
 
 /* Section 4 */
+
+.about-sec4 {
+  background-color: white;
+}
+
 .sec4-card {
   background-color: white;
-  padding: 30px;
+  padding: 22px;
   border-radius: 20px;
 }
 
@@ -466,6 +533,16 @@ details ul li {
   background-color: #fff;
 }
 
+.about-sec9-left img {
+  width: 150px;
+}
+
+.about-sec9-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
 .no-blog-post {
   display: none;
 }
@@ -501,7 +578,7 @@ details ul li {
   height: 300px;
 }
 
-.sec9-card-top img{
+.sec9-card-top img {
   height: 100%;
 }
 
@@ -529,13 +606,12 @@ details ul li {
 }
 
 .footer1-card img {
-  width: 65px;
+  width: 80px;
 }
 
 .footer1-card-3,
 .footer2-card-3 {
   text-align: end;
-
 }
 
 .footer1-card-3 i {
@@ -600,6 +676,10 @@ details ul li {
     font-size: 15px;
   }
 
+  .small {
+    font-size: 15px;
+  }
+
   /* Navbar  */
   .nav-inner {
     padding: 5px 10px;
@@ -635,6 +715,16 @@ details ul li {
       url(../images/office2.jpg) center/cover no-repeat;
   }
 
+  .about-sec1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/office3.jpg) center/cover no-repeat;
+  }
+
+  .contact-sec1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/contact.jpg) center/cover no-repeat;
+  }
+
   .sec1-inner {
     justify-content: center;
     height: 95vh;
@@ -665,6 +755,11 @@ details ul li {
     display: none;
   }
 
+  /* Section 2  */
+  .contact-sec2-right .footer1-card-3 {
+    text-align: center;
+  }
+
   /* Section 5 */
   .sec5 h1 {
     margin: 0px;
@@ -683,15 +778,15 @@ details ul li {
   }
 
   /* Section 9 */
-  .sec9-card-read a{
+  .sec9-card-read a {
     width: 100%;
   }
 
-  .sec9-card-read .flex{
+  .sec9-card-read .flex {
     flex-direction: row;
   }
 
-  .sec9-card-top{
+  .sec9-card-top {
     height: 200px;
   }
 
@@ -706,6 +801,7 @@ details ul li {
 
   /* Footer  */
   .footer1-card-right {
+    display: flex;
     flex-direction: row;
   }
 
